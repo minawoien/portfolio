@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url("static/images/Bakgrunn.jpg");
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#page {
+    display: flex;
+}
+
+#empty {
+    width: 600px;
+}
+
+#text {
+    width: 80%;
+    padding-top: 150px;
+    text-align: center;
+}
+
+img {
+    width: 35%;
+}
+
+p, a {
+    font-family: 'Saira Condensed', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+#info a, p {
+    font-size: 20px;
+}
+
+h1 {
+    font-family: 'La Belle Aurore', cursive;
+    font-size: 70px;
+    margin-bottom: -30px;
+}
+
+#link {
+    display: flex;
+    width: 70%;
+    justify-content: space-around;
+    margin: auto;
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+
+#link p{
+    font-size: 30px;
+    border-bottom:  5px solid rgb(152, 222, 235);
+    width: 130px;
+    
+}
+
