@@ -6,9 +6,9 @@ let mainC = {
                 <h1>Mina Cecilie Wøien</h1>
                 <p>Computer Science Engineering Student at the University of Stavanger</p>
                 <div id="link">
-                    <a href="#" v-on:click="toAbout">About Mina</a>
-                    <p>Github</p>
-                    <p>LinkedIn</p>
+                    <router-link to="/about">About Mina</router-link>
+                    <a href="https://github.com/minawoien/DAT310"  target="_blank">Github</a>
+                    <a href="https://www.linkedin.com/in/mina-w%C3%B8ien-6051421a6/"  target="_blank">LinkedIn</a>
                 </div>
                 <div id="info">
                     <p>Mail: <a href="mailto:mina.cecilie@hotmail.com">mina.cecilie@hotmail.com</a></p>
@@ -18,9 +18,5 @@ let mainC = {
         </div>
         
     `,
-    methods: {
-        toAbout: function(){
-            router.push("/about")
-        }
-    },
+    
 };

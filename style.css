@@ -60,7 +60,7 @@ h1 {
     margin-bottom: 150px;
 }
 
-#link p{
+#link a{
     font-size: 30px;
     border-bottom:  5px solid rgb(152, 222, 235);
     width: 130px;
