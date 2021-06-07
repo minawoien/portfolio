@@ -1,7 +1,6 @@
 let aboutC = {
     template: /*html*/`
         <div class="page">
-            <div class="empty"></div>
             <div class="about">
                 <h1>About Mina</h1>
                 <p>
