@@ -1,6 +1,7 @@
 const routes = [
     { path: '/', component: mainC},
-    { path: '/about', component: aboutC}
+    { path: '/about', component: aboutC},
+    { path: '/projects', component: projectsC}
     //{ path: '/:pathMatch(.*)', component: errorC}
 ];
 
@@ -14,4 +15,5 @@ let app = Vue.createApp({});
 app.use(router);
 app.component("main-page", mainC)
 app.component("about", aboutC)
+app.component("projects", projectsC)
 app.mount("#app")

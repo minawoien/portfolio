@@ -4,6 +4,7 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Saira Condensed', sans-serif;
 }
 
 body {
@@ -14,26 +15,27 @@ body {
     background-size: cover;
 }
 
-#page {
+.page {
     display: flex;
 }
 
-#empty {
-    width: 600px;
+.empty {
+    /* width: 600px; */
+    width: 40%;
 }
 
-#text {
+.text, .about{
     width: 80%;
-    padding-top: 150px;
+    padding-top: 11%;
     text-align: center;
+}
+
+.back:hover {
+    font-size: 20px;
 }
 
 img {
     width: 35%;
-}
-
-p, a {
-    font-family: 'Saira Condensed', sans-serif;
 }
 
 a {
@@ -41,8 +43,8 @@ a {
     color: black;
 }
 
-#info a, p {
-    font-size: 20px;
+p {
+    font-size: 1.5em;
 }
 
 h1 {
@@ -61,9 +63,95 @@ h1 {
 }
 
 #link a{
-    font-size: 30px;
+    font-size: 2em;
     border-bottom:  5px solid rgb(152, 222, 235);
     width: 130px;
-    
 }
 
+#link a:hover {
+    font-weight: bolder;
+}
+
+/* PROJECTS */
+
+#projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.project {
+    width: 40%;
+    margin: 2%;
+    padding: 2%;
+    background: rgba(253, 253, 253, 0.5);
+    text-align: left;
+}
+
+.project:hover {
+    background: rgba(253, 253, 253, 0.7);
+}
+
+td {
+    padding-right: 10px;
+}
+
+table {
+    margin: 20px 0;
+}
+
+/* Icons */
+#github {
+    content: url('https://api.iconify.design/akar-icons:github-fill.svg?height=24');
+    vertical-align: -0.125em;
+    padding-bottom: 6px;
+}
+
+#github:hover {
+    width: 30px;
+    padding-bottom: 0px;
+}
+
+@media only screen and (max-width: 1150px) {
+    .empty {
+        display: none;
+    }
+    
+    .page {
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    h1 {
+        font-size: 3em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+    #link a{
+        font-size: 1.5em;
+        border-bottom:  3px solid rgb(152, 222, 235);
+        width: 100px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    #link {
+        flex-wrap: wrap;
+        margin: 30px auto;
+    }
+
+    #link a{
+        font-size: 20px;
+        border-bottom:  3px solid rgb(152, 222, 235);
+        width: 100px;
+        margin: 20px 10%;
+    }
+}
