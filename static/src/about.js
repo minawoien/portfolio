@@ -13,6 +13,5 @@ let aboutC = {
                 <router-link to="/" class="back">Back</router-link>
             </div>
         </div>
-        
     `
 };
